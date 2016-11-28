@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">First app</string>
+    <string name="helloworld">Hello world !</string>
+    <string name="lambdaText">Labor Ipsum</string>
+    <string name="anaBut">Ana</string>
+    <string name="bastionBut">Bastion</string>
+    <string name="msg">Downloaded</string>
+    <string name="toastTitle">Toast</string>
+    <string name="notifTitle">Notification</string>
+    <string name="dialogTitle">Dialog</string>
+    <string name="toastMsg">Toasted</string>
+    <string name="notifMsg">Notified</string>
+    <string name="dialogMsg">Fuck off</string>
+</resources>

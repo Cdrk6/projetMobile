@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">def_app_name</string>
+    <string name="helloworld">def_helloworld</string>
+    <string name="lambdaText">def_lambdaText</string>
+    <string name="anaBut">def_anaBut</string>
+    <string name="bastionBut">def_bastionBut</string>
+    <string name="msg">def_msg</string>
+    <string name="toastTitle">def_toastTitle</string>
+    <string name="notifTitle">def_notifTitle</string>
+    <string name="dialogTitle">def_dialogTitle</string>
+    <string name="toastMsg">def_toastMsg</string>
+    <string name="notifMsg">def_notifMsg</string>
+    <string name="dialogMsg">def_dialogMsg</string>
+</resources>
