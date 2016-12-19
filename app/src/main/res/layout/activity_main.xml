@@ -11,27 +11,214 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.arnaud.firstapp.MainActivity">
 
-    <TextView
-        android:id="@+id/hw"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/helloworld"
-        android:gravity="center"/>
-
     <Button
-        android:id="@+id/but1"
+        android:id="@+id/but4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="@string/anaBut"
-        android:layout_below="@+id/hw" />
+        android:text="GENJI"
+        android:layout_below="@+id/but1" />
+
+    <Button
+        android:id="@+id/but7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="LUCIO"
+        android:layout_below="@+id/but4" />
+
+    <Button
+        android:id="@+id/but10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="MERCY"
+        android:layout_below="@+id/but7" />
+
+    <Button
+        android:id="@+id/but13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="REINHARDT"
+        android:layout_below="@+id/but10" />
+
+    <Button
+        android:id="@+id/but16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="SYMMETRA"
+        android:layout_below="@+id/but13" />
+
+    <Button
+        android:id="@+id/but22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="ZENYATTA"
+        android:layout_below="@+id/but19" />
 
     <Button
         android:id="@+id/but2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="BASTION"
+        android:layout_alignBaseline="@+id/but1"
+        android:layout_alignBottom="@+id/but1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/but5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HANZO"
+        android:layout_alignBaseline="@+id/but4"
+        android:layout_alignBottom="@+id/but4"
+        android:layout_alignLeft="@+id/but2"
+        android:layout_alignStart="@+id/but2" />
+
+    <Button
+        android:id="@+id/but6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JUNKRAT"
+        android:layout_alignBaseline="@+id/but5"
+        android:layout_alignBottom="@+id/but5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/but8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="McCREE"
+        android:layout_alignBaseline="@+id/but7"
+        android:layout_alignBottom="@+id/but7"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/but9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEI"
+        android:layout_alignBaseline="@+id/but8"
+        android:layout_alignBottom="@+id/but8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/but11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHARAH"
+        android:layout_alignBaseline="@+id/but10"
+        android:layout_alignBottom="@+id/but10"
+        android:layout_alignLeft="@+id/but8"
+        android:layout_alignStart="@+id/but8" />
+
+    <Button
+        android:id="@+id/but12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REAPER"
+        android:layout_alignBaseline="@+id/but11"
+        android:layout_alignBottom="@+id/but11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/but14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROADHOG"
+        android:layout_alignBaseline="@+id/but13"
+        android:layout_alignBottom="@+id/but13"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/but15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOLDIER 76"
+        android:layout_alignTop="@+id/but14"
+        android:layout_alignLeft="@+id/but12"
+        android:layout_alignStart="@+id/but12" />
+
+    <Button
+        android:id="@+id/but17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TORBJORN"
+        android:layout_alignBaseline="@+id/but16"
+        android:layout_alignBottom="@+id/but16"
+        android:layout_alignLeft="@+id/but14"
+        android:layout_alignStart="@+id/but14" />
+
+    <Button
+        android:id="@+id/but18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRACER"
+        android:layout_alignTop="@+id/but17"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/but20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WINSTON"
+        android:layout_alignBaseline="@+id/but19"
+        android:layout_alignBottom="@+id/but19"
+        android:layout_alignLeft="@+id/but17"
+        android:layout_alignStart="@+id/but17" />
+
+    <Button
+        android:id="@+id/but21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZARYA"
+        android:layout_alignBaseline="@+id/but20"
+        android:layout_alignBottom="@+id/but20"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/but23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOMBRA"
+        android:layout_alignTop="@+id/but22"
+        android:layout_alignLeft="@+id/but20"
+        android:layout_alignStart="@+id/but20" />
+
+    <Button
+        android:id="@+id/but3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D.VA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/but19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="@string/bastionBut"
-        android:layout_below="@+id/hw" />
+        android:text="WIDOWMAKER"
+        android:layout_below="@+id/but16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -22,9 +23,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.Buffer;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity /*implements View.OnClickListener*/ {
+
     public static String BEERS_UPDATE = "com.octip.cours.inf3044_11.BEERS_UPDATE";
-    RecyclerView recyclerView;
+    private RecyclerView recyclerView;
+    public static String heroIndex = "";
 
     public class BeerUpdate extends BroadcastReceiver {
 
@@ -40,6 +43,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        heroIndex = this.getIntent().getStringExtra("key");
         IntentFilter intentFilter = new IntentFilter(BEERS_UPDATE);
         LocalBroadcastManager.getInstance(this).registerReceiver(new BeerUpdate(), intentFilter);
         setContentView(R.layout.activity_main2);
@@ -47,6 +51,8 @@ public class MainActivity2 extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.rv_biere);
         recyclerView.setAdapter(new BeersAdapter(getBeersFromFile(), this));
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+//        Button b0 = (Button) findViewById(R.id.but0);
+//        Button b1 = (Button) findViewById(R.id.but1);
     }
 
     public JSONArray getBeersFromFile() {
@@ -58,8 +64,8 @@ public class MainActivity2 extends AppCompatActivity {
             is.close();
 
             JSONObject OWH = new JSONObject(new String(buff, "UTF-8"));
+
             return OWH.getJSONArray("data");
-            //return new JSONArray(new String(buff, "UTF-8"));
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -70,4 +76,17 @@ public class MainActivity2 extends AppCompatActivity {
             return new JSONArray();
         }
     }
+
+/*    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.but0:
+                heroIndex = 0;
+                break;
+            case R.id.but1:
+                heroIndex = 1;
+                break;
+            default:
+                break;
+        }
+    }*/
 }
